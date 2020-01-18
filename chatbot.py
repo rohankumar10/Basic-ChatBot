@@ -39,8 +39,11 @@ def greeting(sentence):
     for word in sentence.split():
         if word.lower() in GREETING_INPUTS:
             return random.choice(GREETING_RESPONSES)
-
-
+        
+        
+# From scikit learn library, import the TFidf vectorizer to convert a collection of raw documents to a matrix of TF-IDF features.
+# This will be used to find the similarity between words entered by the user and the words in the corpus(TEXT FILE THAT HAS SOME DATA).        
+    
 def response(user_response):
     robo_response=''
     sent_tokens.append(user_response)
